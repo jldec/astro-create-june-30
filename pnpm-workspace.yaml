@@ -1,0 +1,22 @@
+# Pre-approve build scripts for the packages C3 itself installs that need
+# them: `workerd` downloads the platform binary, `esbuild` and `sharp`
+# (via miniflare) download/build native bindings. Without these, pnpm 11+
+# aborts the install with ERR_PNPM_IGNORED_BUILDS.
+allowBuilds:
+  esbuild: true
+  workerd: true
+  sharp: true
+minimumReleaseAgeExclude:
+  - '@astrojs/compiler-binding-darwin-arm64@0.3.0'
+  - '@astrojs/compiler-binding-darwin-x64@0.3.0'
+  - '@astrojs/compiler-binding-linux-arm64-gnu@0.3.0'
+  - '@astrojs/compiler-binding-linux-arm64-musl@0.3.0'
+  - '@astrojs/compiler-binding-linux-x64-gnu@0.3.0'
+  - '@astrojs/compiler-binding-linux-x64-musl@0.3.0'
+  - '@astrojs/compiler-binding-wasm32-wasi@0.3.0'
+  - '@astrojs/compiler-binding-win32-arm64-msvc@0.3.0'
+  - '@astrojs/compiler-binding-win32-x64-msvc@0.3.0'
+  - '@astrojs/compiler-binding@0.3.0'
+  - '@astrojs/compiler-rs@0.3.0'
+  - astro@7.0.4
+  - '@astrojs/cloudflare@14.0.2'
