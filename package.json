@@ -1,27 +1,35 @@
 {
-	"name": "astro-create-june-30",
-	"type": "module",
-	"version": "1.0.0",
-	"packageManager": "pnpm@11.9.0",
-	"engines": {
-		"node": ">=24"
-	},
-	"scripts": {
-		"dev": "astro dev",
-		"build": "astro build",
-		"preview": "astro build && astro preview",
-		"astro": "astro",
-		"generate-types": "wrangler types",
-		"deploy": "astro build && wrangler deploy",
-		"cf-typegen": "wrangler types"
-	},
-	"dependencies": {
-		"@astrojs/cloudflare": "^14.0.2",
-		"@tailwindcss/vite": "^4.3.2",
-		"astro": "^7.0.4",
-		"tailwindcss": "^4.3.2"
-	},
-	"devDependencies": {
-		"wrangler": "^4.105.0"
-	}
+  "name": "astro-create-june-30",
+  "type": "module",
+  "version": "1.0.0",
+  "packageManager": "pnpm@11.9.0",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro build && astro preview",
+    "astro": "astro",
+    "generate-types": "wrangler types",
+    "deploy": "astro build && wrangler deploy",
+    "cf-typegen": "wrangler types"
+  },
+  "dependencies": {
+    "@astrojs/cloudflare": "^14.0.2",
+    "@tailwindcss/vite": "^4.3.2",
+    "astro": "^7.0.4",
+    "tailwindcss": "^4.3.2"
+  },
+  "devDependencies": {
+    "wrangler": "^4.105.0"
+  },
+  "prettier": {
+    "printWidth": 120,
+    "useTabs": false,
+    "tabWidth": 2,
+    "singleQuote": true,
+    "semi": false,
+    "trailingComma": "none"
+  }
 }
